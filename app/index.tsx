@@ -4,8 +4,8 @@ import { ThemeToggle } from "../components/ThemeToggle";
 
 const Index = () => {
   return (
-    <View className="flex-1 items-center justify-center bg-white dark:bg-black">
-      <Text className="text-black dark:text-white text-xl font-semibold">
+    <View className="flex-1 items-center justify-center bg-primary-light dark:bg-primary-dark">
+      <Text className="text-text-light dark:text-text-dark text-xl font-semibold">
         Hello
       </Text>
       <ThemeToggle />
