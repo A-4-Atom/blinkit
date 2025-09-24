@@ -1,13 +1,16 @@
-import { Text, View } from 'react-native'
-import React from 'react'
+import React from "react";
+import { Text, View } from "react-native";
+import { ThemeToggle } from "../components/ThemeToggle";
 
-const index = () => {
+const Index = () => {
   return (
-    <View className='bg-white h-full flex items-center justify-center'>
-      <Text className='text-black'>index</Text>
+    <View className="flex-1 items-center justify-center bg-white dark:bg-black">
+      <Text className="text-black dark:text-white text-xl font-semibold">
+        Hello
+      </Text>
+      <ThemeToggle />
     </View>
-  )
-}
+  );
+};
 
-export default index
-
+export default Index;
