@@ -5,6 +5,7 @@ import TopBar from "@/components/TopBar";
 import { CATEGORIES } from "@/constants/productData";
 import React, { useState } from "react";
 import { FlatList, ScrollView, View } from "react-native";
+import FrequentlyBought from "../components/FrequentyBought";
 
 const Index = () => {
   const [activeCategoryId, setActiveCategoryId] = useState(CATEGORIES[0].id);
@@ -40,6 +41,7 @@ const Index = () => {
           scrollEnabled={false}
         />
       </View>
+      <FrequentlyBought />
     </ScrollView>
   );
 };
