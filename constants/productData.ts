@@ -10,6 +10,7 @@ export type Product = {
   price: number; // price in INR (₹) – treat as display value (no paise)
   image: string; // remote image URL or local asset (require)
   unit?: string; // optional (e.g. "500g", "1L")
+  frequentlyBought: boolean; // randomly assigned for now
 };
 
 export type Category = {
@@ -39,6 +40,7 @@ export const CATEGORIES: Category[] = [
         unit: "4 pcs (~500g)",
         image:
           "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: true,
       },
       {
         id: "banana-robusta",
@@ -48,6 +50,7 @@ export const CATEGORIES: Category[] = [
         unit: "6 pcs (~650g)",
         image:
           "https://images.unsplash.com/photo-1574226516831-e1dff420e43e?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: false,
       },
       {
         id: "blueberries-imported",
@@ -57,6 +60,7 @@ export const CATEGORIES: Category[] = [
         unit: "125g box",
         image:
           "https://images.unsplash.com/photo-1498557850523-fd3d118b962e?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: false,
       },
     ],
   },
@@ -74,6 +78,7 @@ export const CATEGORIES: Category[] = [
         unit: "500g",
         image:
           "https://images.unsplash.com/photo-1582281298056-0209d3493d87?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: false,
       },
       {
         id: "potato-fresh",
@@ -83,6 +88,7 @@ export const CATEGORIES: Category[] = [
         unit: "1kg",
         image:
           "https://images.unsplash.com/photo-1603048297172-c92544798d5a?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: true,
       },
       {
         id: "spinach-bunch",
@@ -92,6 +98,7 @@ export const CATEGORIES: Category[] = [
         unit: "1 bunch (~180g)",
         image:
           "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: false,
       },
     ],
   },
@@ -109,6 +116,7 @@ export const CATEGORIES: Category[] = [
         unit: "1L pack",
         image:
           "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: true,
       },
       {
         id: "curd-fresh",
@@ -118,6 +126,7 @@ export const CATEGORIES: Category[] = [
         unit: "400g tub",
         image:
           "https://images.unsplash.com/photo-1600166898405-da9535204840?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: false,
       },
       {
         id: "cheese-slices",
@@ -127,6 +136,7 @@ export const CATEGORIES: Category[] = [
         unit: "10 slices (200g)",
         image:
           "https://images.unsplash.com/photo-1603046891744-56b8fe9c67a6?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: false,
       },
     ],
   },
@@ -144,6 +154,7 @@ export const CATEGORIES: Category[] = [
         unit: "100g jar",
         image:
           "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: false,
       },
       {
         id: "green-tea-bags",
@@ -153,6 +164,7 @@ export const CATEGORIES: Category[] = [
         unit: "25 bags",
         image:
           "https://images.unsplash.com/photo-1504544750208-dc0358e63f7f?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: true,
       },
       {
         id: "coconut-water",
@@ -162,6 +174,7 @@ export const CATEGORIES: Category[] = [
         unit: "200ml tetra",
         image:
           "https://images.unsplash.com/photo-1622050950848-e04b8b5224cf?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: false,
       },
     ],
   },
@@ -179,6 +192,7 @@ export const CATEGORIES: Category[] = [
         unit: "150g pack",
         image:
           "https://images.unsplash.com/photo-1601924582971-b557a5817c4b?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: false,
       },
       {
         id: "protein-bar-choco",
@@ -188,6 +202,7 @@ export const CATEGORIES: Category[] = [
         unit: "50g",
         image:
           "https://images.unsplash.com/photo-1614707267537-3d85b40c1226?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: true,
       },
       {
         id: "roasted-almonds",
@@ -197,6 +212,7 @@ export const CATEGORIES: Category[] = [
         unit: "100g pouch",
         image:
           "https://images.unsplash.com/photo-1606756790138-261f08bfe6b9?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: false,
       },
     ],
   },
@@ -214,6 +230,7 @@ export const CATEGORIES: Category[] = [
         unit: "400g loaf",
         image:
           "https://images.unsplash.com/photo-1608198093002-ad4e005484b2?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: true,
       },
       {
         id: "croissant-butter",
@@ -223,6 +240,7 @@ export const CATEGORIES: Category[] = [
         unit: "1 pc",
         image:
           "https://images.unsplash.com/photo-1548940740-204726a19be3?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: false,
       },
       {
         id: "cookies-chocochip",
@@ -232,6 +250,7 @@ export const CATEGORIES: Category[] = [
         unit: "200g box",
         image:
           "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&auto=format&fit=crop&q=60",
+        frequentlyBought: false,
       },
     ],
   },
