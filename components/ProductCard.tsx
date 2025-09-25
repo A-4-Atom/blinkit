@@ -1,29 +1,21 @@
-import type { Product } from "@/constants/productData";
 import React from "react";
-import { Image, Pressable, Text, View } from "react-native";
+import { Image, Text, View } from "react-native";
 
 interface ProductCardProps {
-  product: Product;
-  onPress?: (product: Product) => void;
-  style?: any;
+  image: string;
+  title: string;
+  count?: number;
 }
 
-// Displays only image + product name (no price per request)
-const ProductCard: React.FC<ProductCardProps> = ({
-  product,
-  onPress,
-  style,
-}) => {
+const ProductCard: React.FC<ProductCardProps> = ({ image, title, count }) => {
   return (
-    <Pressable
-      accessibilityRole="button"
-      onPress={() => onPress?.(product)}
+    <View
       className="flex-1 rounded-xl bg-surface dark:bg-surface-dark p-3 border border-secondary/20 dark:border-secondary/30"
-      style={[{ minWidth: 150, maxWidth: 180 }, style]}
+      style={{ minWidth: 150, maxWidth: 180 }}
     >
       <View className="w-full aspect-square overflow-hidden rounded-lg bg-background dark:bg-background-dark">
         <Image
-          source={{ uri: product.image }}
+          source={{ uri: image }}
           resizeMode="cover"
           className="w-full h-full"
         />
@@ -32,9 +24,12 @@ const ProductCard: React.FC<ProductCardProps> = ({
         numberOfLines={2}
         className="mt-2 text-sm font-inter text-text dark:text-text-dark"
       >
-        {product.name}
+        {title}
       </Text>
-    </Pressable>
+      {typeof count === "number" && (
+        <Text className="text-xs text-secondary mt-1">{count} left</Text>
+      )}
+    </View>
   );
 };
 

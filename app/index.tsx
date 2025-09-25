@@ -35,7 +35,7 @@ const Index = () => {
           contentContainerStyle={{ gap: 12 }}
           ItemSeparatorComponent={() => <View style={{ height: 12 }} />}
           renderItem={({ item }) => (
-            <ProductCard product={item} style={{ flex: 1 }} />
+            <ProductCard image={item.image} title={item.name} />
           )}
           scrollEnabled={false}
         />
