@@ -1,14 +1,15 @@
+import FeatureGrid from "@/components/FeatureGrid";
+import SearchBar from "@/components/SearchBar";
+import TopBar from "@/components/TopBar";
 import React from "react";
-import { Text, View } from "react-native";
-import { ThemeToggle } from "../components/ThemeToggle";
+import { View } from "react-native";
 
 const Index = () => {
   return (
-    <View className="flex-1 items-center justify-center bg-primary-light dark:bg-primary-dark">
-      <Text className="text-text-light dark:text-text-dark text-xl font-semibold">
-        Hello
-      </Text>
-      <ThemeToggle />
+    <View className="flex-1 items-center w-full bg-background dark:bg-background-dark p-3">
+      <TopBar />
+      <SearchBar placeHolder="Search Anything..." />
+      <FeatureGrid />
     </View>
   );
 };

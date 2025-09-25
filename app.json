@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "blinkit",
+    "name": "Blinkit",
     "slug": "blinkit",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/BlinkitLogo.png",
     "scheme": "blinkit",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -14,10 +14,8 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "backgroundColor": "#FFE141",
+        "foregroundImage": "./assets/images/BlinkitLogo.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
@@ -33,12 +31,65 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/BlinkitLogo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "backgroundColor": "#FFE141",
           "dark": {
             "backgroundColor": "#000000"
+          }
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Inter_Regular.ttf",
+            "./assets/fonts/Inter_Bold.ttf"
+          ],
+          "android": {
+            "fonts": [
+              {
+                "fontFamily": "Inter-Regular",
+                "fontDefinitions": [
+                  {
+                    "path": "./assets/fonts/Inter_Regular.ttf",
+                    "weight": 400
+                  }
+                ]
+              },
+              {
+                "fontFamily": "Inter-Bold",
+                "fontDefinitions": [
+                  {
+                    "path": "./assets/fonts/Inter_Bold.ttf",
+                    "weight": 700
+                  }
+                ]
+              }
+            ]
+          },
+          "ios": {
+            "fonts": [
+              {
+                "fontFamily": "Inter-Regular",
+                "fontDefinitions": [
+                  {
+                    "path": "./assets/fonts/Inter_Regular.ttf",
+                    "weight": 400
+                  }
+                ]
+              },
+              {
+                "fontFamily": "Inter-Bold",
+                "fontDefinitions": [
+                  {
+                    "path": "./assets/fonts/Inter_Bold.ttf",
+                    "weight": 700
+                  }
+                ]
+              }
+            ]
           }
         }
       ]

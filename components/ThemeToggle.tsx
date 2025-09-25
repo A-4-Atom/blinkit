@@ -6,9 +6,9 @@ export function ThemeToggle() {
   return (
     <Pressable
       onPress={toggleTheme}
-      className="mt-4 px-4 py-2 rounded-md bg-neutral-200 dark:bg-neutral-800"
+      className="mt-4 px-4 py-2 rounded-md bg-surface dark:bg-surface-dark flex-row items-center justify-center w-auto self-start border border-secondary"
     >
-      <Text className="text-neutral-900 dark:text-neutral-100">
+      <Text className="text-text dark:text-text-dark font-inter">
         Switch to {theme === "light" ? "Dark" : "Light"}
       </Text>
     </Pressable>
