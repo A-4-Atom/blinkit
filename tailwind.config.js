@@ -7,34 +7,34 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Brand
-        primary: "#FF6B35",   // Fresh orange for CTAs
-        secondary: "#4CAF50", // Green for accents & freshness
+        // Brand - Based on Blinkit theme from image
+        primary: "#0C831F", // Blinkit green for brand identity
+        secondary: "#F8CB46", // Yellow for accents & highlights
 
         // Backgrounds
         background: {
-          DEFAULT: "#FFFDF7", // light
-          dark: "#121212",    // dark
+          DEFAULT: "#FFFFFF", // light mode (white)
+          dark: "#0A0A0A", // dark mode (almost black from the image)
         },
 
         // Surfaces (cards, sheets, containers)
         surface: {
-          DEFAULT: "#F5F5F5",
-          dark: "#1E1E1E",
+          DEFAULT: "#F5F5F5", // light mode cards
+          dark: "#1A3C32", // dark mode cards (teal/dark green from the image)
         },
 
         // Text
         text: {
-          DEFAULT: "#1F2937",    // light mode primary
-          dark: "#F5F5F5",       // dark mode primary
-          muted: "#6B7280",      // light mode muted
-          mutedDark: "#9CA3AF",  // dark mode muted
+          DEFAULT: "#1F2937", // light mode primary
+          dark: "#FFFFFF", // dark mode primary (white)
+          muted: "#6B7280", // light mode muted
+          mutedDark: "#E5E5E5", // dark mode muted (light gray)
         },
       },
       fontFamily: {
         inter: ["Inter-Regular", "sans-serif"],
         "inter-bold": ["Inter-Bold", "sans-serif"],
-      }
+      },
     },
   },
   plugins: [],

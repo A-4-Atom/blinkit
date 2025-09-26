@@ -1,29 +1,21 @@
-// Centralised product & category seed data for the app.
-// Uses a single icon family: Ionicons (from @expo/vector-icons)
-// Keep datasets small & easily swappable.
-
-// -------- Types --------
 export type Product = {
   id: string;
   name: string;
   description: string;
-  price: number; // price in INR (₹) – treat as display value (no paise)
-  image: string; // remote image URL or local asset (require)
-  unit?: string; // optional (e.g. "500g", "1L")
-  frequentlyBought: boolean; // randomly assigned for now
+  price: number;
+  image: string; 
+  unit?: string; 
+  frequentlyBought: boolean; 
 };
 
 export type Category = {
   id: string;
   label: string;
-  icon: string; // Ionicons name
-  themeColor?: string; // optional accent color for UI chips / backgrounds
+  icon: string; 
+  themeColor?: string; 
   products: Product[];
 };
 
-// -------- Category + Product Data --------
-// NOTE: Local product images not added yet – using lightweight Unsplash placeholders.
-// Replace URLs with `require("@/assets/images/xyz.png")` if/when you add local images.
 
 export const CATEGORIES: Category[] = [
   {
@@ -256,7 +248,7 @@ export const CATEGORIES: Category[] = [
   },
 ];
 
-// Grid-friendly lightweight projection (e.g. top feature grid / horizontal scroll)
-export const FEATURE_CATEGORIES = CATEGORIES.slice(0, 6).map(
+
+export const FEATURE_CATEGORIES = CATEGORIES.map(
   ({ id, label, icon, themeColor }) => ({ id, label, icon, themeColor })
 );

@@ -15,7 +15,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   className,
 }) => (
   <View
-    className={`flex-1 rounded-xl bg-surface dark:bg-surface-dark p-3 border border-secondary/20 dark:border-secondary/30 ${className ?? ""}`}
+    className={`flex-1 rounded-xl bg-surface dark:bg-surface-dark p-3 border border-secondary/20 dark:border-secondary/30 items-center ${className ?? ""}`}
     style={{ minWidth: 150, maxWidth: 180 }}
   >
     <View className="w-full aspect-square overflow-hidden rounded-lg bg-background dark:bg-background-dark">
@@ -27,7 +27,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
     </View>
     <Text
       numberOfLines={2}
-      className="mt-2 text-sm font-inter text-text dark:text-text-dark"
+      className="mt-3 text-md font-inter text-text dark:text-text-dark"
     >
       {title}
     </Text>

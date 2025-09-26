@@ -32,20 +32,44 @@ export default function RootLayout() {
       <Drawer
         screenOptions={{
           headerStyle: {
-            backgroundColor: theme === "dark" ? "#121212" : "#FFFDF7",
+            backgroundColor: theme === "dark" ? "#0A0A0A" : "#FFFFFF",
           },
           headerTitleStyle: {
-            color: theme === "dark" ? "#F5F5F5" : "#1F2937",
+            color: theme === "dark" ? "#FFFFFF" : "#1F2937",
             fontFamily: "Inter-Bold",
           },
-          headerTintColor: theme === "dark" ? "#F5F5F5" : "#1F2937", // Hamburger/menu icon color
+          headerTintColor: theme === "dark" ? "#FFFFFF" : "#1F2937", // Hamburger/menu icon color
+          drawerStyle: {
+            backgroundColor: theme === "dark" ? "#0A0A0A" : "#FFFFFF",
+            width: 280,
+          },
+          drawerContentContainerStyle: {
+            paddingLeft: 8,
+            paddingTop: 16,
+          },
+          drawerItemStyle: {
+            paddingHorizontal: 12,
+            borderRadius: 8,
+            marginHorizontal: 8,
+            marginVertical: 4,
+          },
+          drawerContentStyle: {
+            marginTop: 32,
+          },
+          drawerActiveBackgroundColor: theme === "dark" ? "#1A3C32" : "#F5F5F5",
+          drawerActiveTintColor: theme === "dark" ? "#FFFFFF" : "#0C831F",
+          drawerInactiveTintColor: theme === "dark" ? "#E5E5E5" : "#1F2937",
+          drawerLabelStyle: {
+            fontFamily: "Inter-Regular",
+            fontSize: 16,
+          },
           headerRight: () => (
             <Link href="/profile" asChild>
               <Pressable>
                 <Entypo
                   name="user"
                   size={24}
-                  color={theme === "dark" ? "#F5F5F5" : "#1F2937"}
+                  color={theme === "dark" ? "#FFFFFF" : "#1F2937"}
                   className="px-2"
                 />
               </Pressable>
