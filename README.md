@@ -2,9 +2,7 @@
 
 A simple, modern grocery shopping app built with Expo, React Native, and TypeScript.
 
-<p align="center">
-  ![Blinkit Logo](./assets/images/BlinkitLogo.png)
-</p>
+![Blinkit Logo](./assets/images/BlinkitLogo.png)
 
 ## Features
 
