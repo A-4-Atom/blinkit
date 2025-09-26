@@ -2,6 +2,7 @@ import FeatureGrid from "@/components/FeatureGrid";
 import FrequentlyBought from "@/components/FrequentyBought";
 import SearchBar from "@/components/SearchBar";
 import TopBar from "@/components/TopBar";
+import PromoCarousel from "@/components/PromoCarousel";
 import React, { useState } from "react";
 import { ScrollView, View } from "react-native";
 
@@ -14,6 +15,7 @@ const Home = () => {
       contentContainerStyle={{ paddingBottom: 48 }}
       showsVerticalScrollIndicator={false}
     >
+      
       <View className="px-3 pt-3 pb-2 shadow-sm bg-surface/60 dark:bg-surface-dark/30 rounded-b-xl">
         <TopBar />
         <SearchBar placeHolder="Search for snacks, groceries and more" />
@@ -22,10 +24,9 @@ const Home = () => {
           onSelect={setActiveCategoryId}
         />
       </View>
-
       <FrequentlyBought />
-
-      {/* Additional content like promotional banners can be added here */}
+      <PromoCarousel />
+     
     </ScrollView>
   );
 };
