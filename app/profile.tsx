@@ -9,16 +9,15 @@ const Profile = () => {
 
   return (
     <ScrollView className="flex-1 bg-background dark:bg-background-dark">
-      {/* Header */}
       <View className="px-4 pt-12 pb-6">
         <Text className="text-2xl font-inter-bold text-text dark:text-text-dark">
           Profile
         </Text>
       </View>
 
-      {/* Profile Card */}
+
       <View className="mx-4 p-6 rounded-xl bg-surface dark:bg-surface-dark shadow-sm">
-        <View className="flex-row items-center space-x-4">
+        <View className="flex-row items-center space-x-4 gap-4">
           <View className="h-16 w-16 rounded-full bg-secondary items-center justify-center">
             <Text className="text-2xl font-inter-bold text-text">
               {userName.charAt(0)}
@@ -35,7 +34,6 @@ const Profile = () => {
         </View>
       </View>
 
-      {/* Options */}
       <View className="mx-4 mt-6 rounded-xl bg-surface dark:bg-surface-dark overflow-hidden">
         <Pressable
           className="p-4 border-b border-gray-100 dark:border-gray-800 flex-row justify-between items-center"
@@ -65,17 +63,10 @@ const Profile = () => {
         </Pressable>
       </View>
 
-      {/* Theme Toggle */}
       <View className="mx-4 mt-6 items-center">
         <ThemeToggle />
       </View>
 
-      {/* App Version */}
-      <View className="mt-8 mb-12 items-center">
-        <Text className="text-text-muted dark:text-text-mutedDark font-inter text-sm">
-          Blinkit v1.0.0
-        </Text>
-      </View>
     </ScrollView>
   );
 };

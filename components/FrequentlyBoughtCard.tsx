@@ -17,7 +17,7 @@ const FrequentlyBoughtCard = ({
   <View className="flex-1 min-w-[160px] max-w-[180px]">
     <Pressable
       onPress={onPress}
-      className="flex-1 rounded-2xl overflow-hidden bg-surface dark:bg-[#007a14] border border-surface/60 dark:border-[#0C831F]/60 shadow"
+      className="flex-1 rounded-2xl overflow-hidden bg-surface dark:bg-[#025a10] border border-surface/60 dark:border-[#025a10]/60 shadow"
     >
       <View className="p-2 flex-row flex-wrap">
         {images.map((image, index) => (
@@ -31,7 +31,7 @@ const FrequentlyBoughtCard = ({
         ))}
       </View>
 
-      <View className="py-2.5 px-3 pb-3 -mx-0.5 rounded-t-2xl bg-surface dark:bg-[#007a14] shadow">
+      <View className="py-2.5 px-3 pb-3 -mx-0.5 rounded-t-2xl bg-surface dark:bg-[#025a10] shadow">
         <Text className="text-text dark:text-text-dark text-xs font-inter text-center">
           +{moreCount} more
         </Text>
