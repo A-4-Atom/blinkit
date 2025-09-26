@@ -49,7 +49,7 @@ export const CATEGORIES: Category[] = [
         price: 55,
         unit: "6 pcs (~650g)",
         image:
-          "https://images.unsplash.com/photo-1574226516831-e1dff420e43e?w=400&auto=format&fit=crop&q=60",
+          "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&auto=format&fit=crop&q=60",
         frequentlyBought: false,
       },
       {
@@ -77,7 +77,7 @@ export const CATEGORIES: Category[] = [
         price: 35,
         unit: "500g",
         image:
-          "https://images.unsplash.com/photo-1582281298056-0209d3493d87?w=400&auto=format&fit=crop&q=60",
+          "https://images.unsplash.com/photo-1561136594-7f68413baa99?w=400&auto=format&fit=crop&q=60",
         frequentlyBought: false,
       },
       {
@@ -87,7 +87,7 @@ export const CATEGORIES: Category[] = [
         price: 29,
         unit: "1kg",
         image:
-          "https://images.unsplash.com/photo-1603048297172-c92544798d5a?w=400&auto=format&fit=crop&q=60",
+          "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400&auto=format&fit=crop&q=60",
         frequentlyBought: true,
       },
       {
@@ -115,7 +115,7 @@ export const CATEGORIES: Category[] = [
         price: 56,
         unit: "1L pack",
         image:
-          "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400&auto=format&fit=crop&q=60",
+          "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&auto=format&fit=crop&q=60",
         frequentlyBought: true,
       },
       {
@@ -125,7 +125,7 @@ export const CATEGORIES: Category[] = [
         price: 40,
         unit: "400g tub",
         image:
-          "https://images.unsplash.com/photo-1600166898405-da9535204840?w=400&auto=format&fit=crop&q=60",
+          "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&auto=format&fit=crop&q=60",
         frequentlyBought: false,
       },
       {
@@ -135,7 +135,7 @@ export const CATEGORIES: Category[] = [
         price: 125,
         unit: "10 slices (200g)",
         image:
-          "https://images.unsplash.com/photo-1603046891744-56b8fe9c67a6?w=400&auto=format&fit=crop&q=60",
+          "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=400&auto=format&fit=crop&q=60",
         frequentlyBought: false,
       },
     ],
@@ -163,7 +163,7 @@ export const CATEGORIES: Category[] = [
         price: 160,
         unit: "25 bags",
         image:
-          "https://images.unsplash.com/photo-1504544750208-dc0358e63f7f?w=400&auto=format&fit=crop&q=60",
+          "https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?w=400&auto=format&fit=crop&q=60",
         frequentlyBought: true,
       },
       {
@@ -173,7 +173,7 @@ export const CATEGORIES: Category[] = [
         price: 55,
         unit: "200ml tetra",
         image:
-          "https://images.unsplash.com/photo-1622050950848-e04b8b5224cf?w=400&auto=format&fit=crop&q=60",
+          "https://images.unsplash.com/photo-1535922964111-cf1f1e862dcc?w=400&auto=format&fit=crop&q=60",
         frequentlyBought: false,
       },
     ],
@@ -191,7 +191,7 @@ export const CATEGORIES: Category[] = [
         price: 85,
         unit: "150g pack",
         image:
-          "https://images.unsplash.com/photo-1601924582971-b557a5817c4b?w=400&auto=format&fit=crop&q=60",
+          "https://images.unsplash.com/photo-1600952841320-db92ec4047ca?w=400&auto=format&fit=crop&q=60",
         frequentlyBought: false,
       },
       {
@@ -201,7 +201,7 @@ export const CATEGORIES: Category[] = [
         price: 99,
         unit: "50g",
         image:
-          "https://images.unsplash.com/photo-1614707267537-3d85b40c1226?w=400&auto=format&fit=crop&q=60",
+          "https://images.unsplash.com/photo-1622484212850-eb596d769edc?w=400&auto=format&fit=crop&q=60",
         frequentlyBought: true,
       },
       {
@@ -211,7 +211,7 @@ export const CATEGORIES: Category[] = [
         price: 210,
         unit: "100g pouch",
         image:
-          "https://images.unsplash.com/photo-1606756790138-261f08bfe6b9?w=400&auto=format&fit=crop&q=60",
+          "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&auto=format&fit=crop&q=60",
         frequentlyBought: false,
       },
     ],
@@ -229,7 +229,7 @@ export const CATEGORIES: Category[] = [
         price: 55,
         unit: "400g loaf",
         image:
-          "https://images.unsplash.com/photo-1608198093002-ad4e005484b2?w=400&auto=format&fit=crop&q=60",
+          "https://images.unsplash.com/photo-1598373182133-52452f7691ef?w=400&auto=format&fit=crop&q=60",
         frequentlyBought: true,
       },
       {
@@ -239,7 +239,7 @@ export const CATEGORIES: Category[] = [
         price: 65,
         unit: "1 pc",
         image:
-          "https://images.unsplash.com/photo-1548940740-204726a19be3?w=400&auto=format&fit=crop&q=60",
+          "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&auto=format&fit=crop&q=60",
         frequentlyBought: false,
       },
       {
@@ -249,7 +249,7 @@ export const CATEGORIES: Category[] = [
         price: 110,
         unit: "200g box",
         image:
-          "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&auto=format&fit=crop&q=60",
+          "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&auto=format&fit=crop&q=60",
         frequentlyBought: false,
       },
     ],

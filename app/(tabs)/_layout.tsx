@@ -1,7 +1,7 @@
+import { useThemeStore } from "@/store/themeStore";
 import Entypo from "@expo/vector-icons/Entypo";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { Tabs } from "expo-router";
-import { useThemeStore } from "@/store/themeStore";
 import React from "react";
 
 export default function TabsLayout() {

@@ -1,11 +1,11 @@
 import FeatureGrid from "@/components/FeatureGrid";
+import FrequentlyBought from "@/components/FrequentyBought";
 import ProductCard from "@/components/ProductCard";
 import SearchBar from "@/components/SearchBar";
 import TopBar from "@/components/TopBar";
 import { CATEGORIES } from "@/constants/productData";
 import React, { useState } from "react";
 import { FlatList, ScrollView, View } from "react-native";
-import FrequentlyBought from "@/components/FrequentyBought";
 
 const Home = () => {
   const [activeCategoryId, setActiveCategoryId] = useState(CATEGORIES[0].id);
@@ -30,7 +30,6 @@ const Home = () => {
       <View className="mt-4 px-3">
         <FlatList
           data={products}
-            // @ts-ignore - stable key type
           keyExtractor={(item) => item.id}
           numColumns={2}
           columnWrapperStyle={{ gap: 12 }}
