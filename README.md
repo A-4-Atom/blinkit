@@ -24,7 +24,7 @@ A simple, modern grocery shopping app built with Expo, React Native, and TypeScr
 2. **Start the app**
 
    ```bash
-   npm start
+   npx expo start -c
    ```
 
 3. **Run on device or emulator**
