@@ -1,45 +1,33 @@
-import ProductCard from "@/components/ProductCard";
-import { CATEGORIES } from "@/constants/productData";
 import React from "react";
-import { Dimensions, Text, View } from "react-native";
-import Carousel from "react-native-reanimated-carousel";
-
-const frequentlyBoughtProducts = CATEGORIES.flatMap((cat) =>
-  cat.products.filter((p) => p.frequentlyBought)
-);
-
-const { width: windowWidth } = Dimensions.get("window");
+import { FlatList, Text, View } from "react-native";
+import FrequentlyBoughtCard from "./FrequentlyBoughtCard";
+import { FREQUENTLY_BOUGHT_CATEGORIES } from "../constants/productData";
 
 const FrequentlyBought = () => {
   return (
-    <View className="mt-6 mb-2 max-w-max">
-      <Text className="text-2xl font-bold mb-3 text-text dark:text-text-dark self-start ml-2">
-        Frequently Bought
-      </Text>
-      <View className="items-center w-fit ml-40">
-        <Carousel
-          width={windowWidth * 0.9}
-          height={260}
-          data={frequentlyBoughtProducts}
-          mode="horizontal-stack"
-          modeConfig={{
-            snapDirection: "left",
-            stackInterval: 18,
-          }}
-          renderItem={({ item }) => (
-            <ProductCard
-              image={item.image}
-              title={item.name}
-              className="w-full"
-            />
-          )}
-          snapEnabled
-          loop
-          autoPlay
-          autoPlayInterval={2000}
-          pagingEnabled
-        />
+    <View className="w-full mt-6">
+      <View className="px-3 mb-4">
+        <Text className="text-xl font-inter-bold text-text dark:text-text-dark">
+          Frequently bought
+        </Text>
       </View>
+
+      <FlatList
+        data={FREQUENTLY_BOUGHT_CATEGORIES}
+        keyExtractor={(item) => item.id}
+        numColumns={2}
+        contentContainerStyle={{ paddingHorizontal: 12, gap: 12 }}
+        columnWrapperStyle={{ gap: 12 }}
+        ItemSeparatorComponent={() => <View style={{ height: 12 }} />}
+        renderItem={({ item }) => (
+          <FrequentlyBoughtCard
+            title={item.title}
+            moreCount={item.moreCount}
+            images={item.images}
+          />
+        )}
+        scrollEnabled={false}
+      />
     </View>
   );
 };

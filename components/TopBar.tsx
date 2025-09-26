@@ -13,7 +13,7 @@ const TopBar = () => {
   const userName = useUserStore((state) => state.userName);
   const greeting = getGreeting();
   return (
-    <View className="w-full flex-row items-center mb-4 mt-4 bg-transparent">
+    <View className="w-full flex-row items-center mb-4 bg-transparent">
       <Text className="text-2xl font-inter-bold text-text dark:text-text-dark">
         {greeting}, {userName}
       </Text>

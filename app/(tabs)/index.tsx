@@ -1,17 +1,12 @@
 import FeatureGrid from "@/components/FeatureGrid";
 import FrequentlyBought from "@/components/FrequentyBought";
-import ProductCard from "@/components/ProductCard";
 import SearchBar from "@/components/SearchBar";
 import TopBar from "@/components/TopBar";
-import { CATEGORIES } from "@/constants/productData";
 import React, { useState } from "react";
-import { FlatList, ScrollView, View } from "react-native";
+import { ScrollView, View } from "react-native";
 
 const Home = () => {
-  const [activeCategoryId, setActiveCategoryId] = useState(CATEGORIES[0].id);
-
-  const products =
-    CATEGORIES.find((c) => c.id === activeCategoryId)?.products ?? [];
+  const [activeCategoryId, setActiveCategoryId] = useState("all");
 
   return (
     <ScrollView
@@ -19,29 +14,18 @@ const Home = () => {
       contentContainerStyle={{ paddingBottom: 48 }}
       showsVerticalScrollIndicator={false}
     >
-      <View className="px-3 pt-3">
+      <View className="px-3 pt-3 pb-2 shadow-sm bg-surface/60 dark:bg-surface-dark/30 rounded-b-xl">
         <TopBar />
-        <SearchBar placeHolder="Search Anything..." />
+        <SearchBar placeHolder="Search for snacks, groceries and more" />
         <FeatureGrid
           activeCategoryId={activeCategoryId}
           onSelect={setActiveCategoryId}
         />
       </View>
-      <View className="mt-4 px-3">
-        <FlatList
-          data={products}
-          keyExtractor={(item) => item.id}
-          numColumns={2}
-          columnWrapperStyle={{ gap: 12 }}
-          contentContainerStyle={{ gap: 12 }}
-          ItemSeparatorComponent={() => <View style={{ height: 12 }} />}
-          renderItem={({ item }) => (
-            <ProductCard image={item.image} title={item.name} />
-          )}
-          scrollEnabled={false}
-        />
-      </View>
+
       <FrequentlyBought />
+
+      {/* Additional content like promotional banners can be added here */}
     </ScrollView>
   );
 };

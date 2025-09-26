@@ -8,12 +8,12 @@ type ProductCardProps = {
   className?: string;
 };
 
-const ProductCard: React.FC<ProductCardProps> = ({
+const ProductCard = ({
   image,
   title,
   count,
   className,
-}) => (
+}: ProductCardProps) => (
   <View
     className={`flex-1 rounded-xl bg-surface dark:bg-surface-dark p-3 border border-secondary/20 dark:border-secondary/30 items-center ${className ?? ""}`}
     style={{ minWidth: 150, maxWidth: 180 }}
